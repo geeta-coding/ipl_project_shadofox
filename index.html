@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPL FAN PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ipl.png" type="image/x-icon">
+    <meta name="theme-color" content="#ff4500">
+
+  <!-- Windows tile color -->
+  <meta name="msapplication-TileColor" content="#ff4500">
+  <meta name="msapplication-TileImage" content="favicon.ico">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="ipl.png" alt="">
+        </div>
+
+
+        <!-- this is for background logo -->
+        <div class="background">
+            <img src="csblogo.png" id="logobg" alt="">
+        </div>
+
+        <div class="heading">
+            <h1 id="head">
+                Royal Challengers Bangalore
+            </h1>
+
+            <p style="font-weight: 500;">
+            
+            </p>
+
+            <button>WATCH NOW</button>
+        </div>
+
+        <!-- this is for main image -->
+
+        <div class="image">
+            <img id="myimage" src="rcb-removebg-preview.png" alt="">
+        </div>
+
+
+
+
+        <!-- now navbar -->
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">
+                    Team </a> </li>
+               
+                <li><a href="rank.html">Rank</a></li>
+                 <li> <a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- html code is done -->
+
+        <!-- now jump to css code -->
+
+        <!-- one class is missing -->
+
+        <div class="empty">
+
+
+        </div>
+
+        <!-- this is for remaining teams -->
+
+        <div class="list">
+            <ol>
+                <li onclick="myFun('csk.png', 'gold', 'Chennai Super Kings', 'csklogo.png')">CSK</li>
+
+
+                <!-- first one is sucessfully working -->
+                <!-- copy and change the image name, color -->
+
+                <li onclick="myFun('dd1.png', 'blue', 'Delhi Capitals', 'ddlogo.png')">DC</li>
+                <li onclick="myFun('mi.png', 'dodgerblue', 'Mumbai Indians', 'milogo.png')">MI</li>
+                <li onclick="myFun('srh.png', 'orangered', 'Sun Raise Hydrabad', 'srhlogo.png')">SRH</li>
+                <li onclick="myFun('kp.png', 'red', 'King XI Punjab', 'kplogo.png')">KXIP</li>
+                <li onclick="myFun('rr1.png', '#ff3385', 'Rajastan Royals', 'rr.png')">RR</li>
+                <li onclick="myFun('kkr.png', 'purple', 'Kolkata Knight Riders', 'kkrlogo.png')">KKR</li>
+            </ol>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<script>
+
+    function myFun(image, colour, head, logo){
+        document.getElementById('myimage').src=image;
+        document.querySelector('.empty').style.backgroundColor=colour;
+        document.querySelector('button').style.backgroundColor=colour;
+        
+
+        document.getElementById('head').innerHTML=head;
+        document.getElementById('logobg').src=logo;
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
